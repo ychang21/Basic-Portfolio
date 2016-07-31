@@ -1,15 +1,30 @@
+body {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	background: "assets/images/cork-wallet.png";
+}
+
+header {
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	text-align: center;
+}
+
 h1 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	color: #ffffff;
 	background: #4aaaa5;
 	float: left;
+	margin-left: 150px;
 }
 
-
+}
 
 a {
-	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	text-align: right;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	text-decoration: none;
 }
 
 h2 {
@@ -22,7 +37,40 @@ h3 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+.container {
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	width: 650px;
+	margin-left: 150px;
+}
+
+.block {
+	width: 270px;
+	float: left;
+}
+
+#self {
+	width: 250px;
+	height: 300px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#bio {
+	float:left;
+	width: 70%;
+	padding-right: 40px;
+}
+
+
 footer {
+	clear: both;
+	overflow: auto;
+	text-align: center;
 	background-color: #666666;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	padding: 30px;
+	margin-top: 5px;
+	margin-top: #4aaaa5;
 }
