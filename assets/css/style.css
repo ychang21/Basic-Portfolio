@@ -1,13 +1,27 @@
+/*This is the css for a sticky footer*/
+* {
+	margin: 0;
+} 
+
+html, body {
+	height: 100%;
+}
+
+/*This is the css for a sticky footer*/
+
 body {
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
-	background: "assets/images/cork-wallet.png";
+	background-image: url("../images/concrete_seamless.png");
+	background-repeat: repeat;
 }
 
 header {
 	background-color: #ffffff;
-	border: 1px solid #cccccc;
+	border-bottom: 2px solid #cccccc;
 	text-align: center;
+	width: 100%;
+	height: 90px;
 }
 
 h1 {
@@ -16,61 +30,216 @@ h1 {
 	background: #4aaaa5;
 	float: left;
 	margin-left: 150px;
+	margin-top: 20px;
+	font-size: 40px;
+	padding: 15px;
 }
 
+nav {
+	margin-left: 594px;
+	padding-top: 45px;
 }
 
-a {
+nav a {
 	text-align: right;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	color: #777777;
 	text-decoration: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #f1f1f1; 
+}
+nav a:last-child {
+	border-right: none;
+}
+
+h2, h3 {
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-weight: bold;
+	padding-bottom: 30px;
 }
 
 h2 {
-	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 35px;
+	padding-top: 10px;
+	border-bottom: 3px solid #cccccc;
 }
 
 h3 {
-	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 25px;
+	border-bottom: 2px solid #ededed;
+}
+
+.container #icons h2 {
+	margin-bottom: 40px;
 }
 
 .container {
-	background-color: #ffffff;
-	border: 1px solid #dddddd;
-	width: 650px;
-	margin-left: 150px;
-}
-
-.block {
-	width: 270px;
-	float: left;
-}
-
-#self {
-	width: 250px;
-	height: 300px;
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
+	/*This is the css for a sticky footer*/
+	min-height: 100%;
+	margin: 0% auto -107px;
+	/*This is the css for a sticky footer*/
 }
 
 #bio {
-	float:left;
-	width: 70%;
-	padding-right: 40px;
+	float: left;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	width: 608px;
+	height: 530px;
+	padding: 20px;
+	/* total width= 608 + 2(border) + 40(padding)=650*/ 
+	margin-left: 150px;
+	margin-top: 30px;
+	line-height: 2;
+	margin-bottom: 40px;
+} 
+
+.container #bio img {
+	width: 300px;
+	height: 250px;
 }
 
+#icons {
+	float: left;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	width: 608px;
+	height: 870px;
+	padding: 30px 20px 20px 20px;
+	/* total width= 608 + 2(border) + 40(padding)=650*/ 
+	margin-left: 150px;
+	margin-top: 30px;
+	
+}
+
+#contact {
+	float: left;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	width: 608px;
+	height: 590px;
+	padding: 20px;
+	/* total width= 608 + 2(border) + 40(padding)=650*/ 
+	margin-left: 150px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	line-height: 1.5;
+}
+
+.list {
+	display: inline;
+} 
+
+.image {
+	width: 280px;
+	height: 271px;
+	margin: auto;
+	float: left;
+}
+
+.image.full {
+	margin-right: 48px;
+}
+
+.container #icons .list .image img {
+	display: inline-block;
+	width: 280px;
+	height: 230px;
+}
+
+.container #connect img {
+	width: 70px;
+	height: 70px;
+	padding-top: 20px;
+}
+
+.portfolio-icon{
+	width: 280px;
+	height: 40px;
+	text-align: center;
+	background-color: #4aaaa5;
+	color: #ffffff;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 1.5rem;
+	padding-top: 20px;
+	position: relative;
+	bottom: 75px;
+}
+
+.container #bio #self {
+	width: 200px;
+	height: 250px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	float: left;
+	padding-top: 30px;
+}
+
+#connect {
+	display: inline-block;
+	padding: 30px 20px 20px 20px;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	height: 185px;
+	width: 228px;
+	margin-left: 40px;
+	margin-top: 30px;
+	text-align: center;
+	/* total width= 228 + 40(padding) + 2(borders)=270
+	650 + 270 + 40(margin-left of connect)=960px total content area*/
+}
+
+#name, #email {
+	width: 600px;
+	height: 30px;
+}
+
+p {
+	padding-top: 20px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+input {
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 600px;
+	height: 250px;
+}
+
+button {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	width: 90px;
+	height: 40px;
+	margin-top: 10px;
+	font-size: 15px;
+}
 
 footer {
 	clear: both;
-	overflow: auto;
+	width: 100%;
+	height: 45px;
+	padding-top: 45px;
 	text-align: center;
 	background-color: #666666;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	padding: 30px;
-	margin-top: 5px;
-	margin-top: #4aaaa5;
+	border-top: 9px solid #4aaaa5;
+	color: #cccccc;
+} 
+
+a:hover {
+	color: #0000ff;
+}
+button:hover {
+	background-color: red;
+}
+.container #connect img:hover {
+	background-color: red;
 }
